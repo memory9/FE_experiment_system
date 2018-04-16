@@ -34,9 +34,9 @@
             <li><a href="#" class="active"><i class="fa fa-map-marker fa-fw"></i>公告栏</a></li>
             <li><a href="personal-center.html" ><i class="fa fa-home fa-fw"></i>个人中心</a></li>
             <li><a href="member-manage.html"><i class="fa fa-database fa-fw"></i>成员管理</a></li>
-            <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>实验室与实验课程</a></li>
-            <li><a href="preferences.html"><i class="fa fa-sliders fa-fw"></i>实验报告与实验数据</a></li>
-            <li><a href="/loginIndex"><i class="fa fa-eject fa-fw"></i>登出</a></li>
+            <li><a href="lab-course.html"><i class="fa fa-users fa-fw"></i>实验室与实验课程</a></li>
+            <li><a href="lab-report-data.html"><i class="fa fa-sliders fa-fw"></i>实验报告与实验数据</a></li>
+            <li><a href="../login.html"><i class="fa fa-eject fa-fw"></i>登出</a></li>
           </ul>
         </nav>
       </div>
@@ -46,7 +46,8 @@
           <div class="row">
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
-                <li><h1><a class="active">华中科技大学实验课程信息管理系统</a></h1></li>
+                <li><h2><a href="#" class="active">浏览公告</a></h2></li>
+                <li><h2><a href="create-announcement.html">创建公告</a></h2></li>
                 <div style="float: right">
                  <li><img th:src="${user.url}" alt="头像" style="width: 35px;height: 35px;border: 1px;border-style:groove;solid-color: #FFFFF0" ></li>
                   <li style="font-family: 微软雅黑" th:text="'&nbsp; ' + ${user.name}+'，欢迎回来！'">U201513315，欢迎回来！</li>
@@ -142,51 +143,6 @@
               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
               proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
-          </div>
-
-          <div class="templatemo-content-widget white-bg">
-            <h2 class="margin-bottom-10">创建新公告</h2>
-            <form action="broad-manage.html" class="templatemo-login-form" method="post" enctype="multipart/form-data">
-              <div class="row form-group">
-                <div class="col-lg-6 col-md-6 form-group">
-                    <label for="input-ann-title">公告标题</label>
-                    <input type="text" class="form-control" id="input-ann-title" placeholder="新公告">
-                </div>
-                <div class="col-lg-6 col-md-6 form-group">
-                    <label class="control-label templatemo-block">公告类型</label>
-                    <div class="templatemo-block margin-bottom-5">
-                      <input type="radio" name="ann-options" id="r1" value="类型1" checked>
-                      <label for="r1" class="font-weight-400"><span></span>类型1</label>
-                    </div>
-                    <div class="templatemo-block margin-bottom-5">
-                      <input type="radio" name="ann-options" id="r2" value="类型2">
-                      <label for="r2" class="font-weight-400"><span></span>类型2</label>
-                    </div>
-                    <div class="templatemo-block margin-bottom-5">
-                      <input type="radio" name="ann-options" id="r3" value="类型3">
-                      <label for="r3" class="font-weight-400"><span></span>类型3</label>
-                    </div>
-                  </div>
-              </div>
-              <div class="row form-group">
-                <div class="col-lg-12 form-group">
-                    <label class="control-label" for="input-ann-content">Note</label>
-                    <textarea class="form-control" id="input-ann-content" rows="6"></textarea>
-                </div>
-              </div>
-              <div class="row form-group">
-                <div class="col-lg-12">
-                  <label class="control-label templatemo-block">上传文件</label>
-
-                  <input type="file" name="fileToUpload" id="fileToUpload" class="filestyle" data-buttonName="btn-primary" data-buttonBefore="true" data-icon="false">
-                  <p>Maximum upload size is 5 MB.</p>
-                </div>
-              </div>
-              <div class="form-group text-right">
-                <button type="submit" class="templatemo-blue-button">发布</button>
-                <button type="reset" class="templatemo-white-button">重置</button>
-              </div>
-            </form>
           </div>
         </div> <!-- Second row ends -->
           <footer class="text-right">
