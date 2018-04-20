@@ -35,8 +35,8 @@
             <li><a href="personal-center.html" ><i class="fa fa-home fa-fw"></i>个人中心</a></li>
             <li><a href="member-manage.html"><i class="fa fa-users fa-fw"></i>成员管理</a></li>
             <li><a href="#" class="active"><i class="fa fa-database fa-fw"></i>实验室与实验课程</a></li>
-            <li><a href="preferences.html"><i class="fa fa-sliders fa-fw"></i>实验报告与实验数据</a></li>
-            <li><a href="/loginIndex"><i class="fa fa-eject fa-fw"></i>登出</a></li>
+            <li><a href="lab-report-data.html"><i class="fa fa-sliders fa-fw"></i>实验报告与实验数据</a></li>
+            <li><a href="../login.html"><i class="fa fa-eject fa-fw"></i>登出</a></li>
           </ul>
         </nav>
       </div>
@@ -48,7 +48,16 @@
               <ul class="text-uppercase">
                 <li><h1><a class="active">华中科技大学实验课程信息管理系统</a></h1></li>
                 <div style="float: right">
-                 <li><img th:src="${user.url}" alt="头像" style="width: 35px;height: 35px;border: 1px;border-style:groove;solid-color: #FFFFF0" ></li>
+                  <li>
+                    <div class="dropdown">
+                      <img  id="avatar-img" src="../images/sunset.jpg" th:src="${user.url}" alt="头像">
+                      <div class="dropdown-content">
+                        <a href="personal-center.html">个人主页</a>
+                        <a href="change-pwd.html">修改密码</a>
+                        <a href="../login.html">退出登录</a>
+                      </div>
+                    </div>
+                  </li>
                   <li style="font-family: 微软雅黑" th:text="'&nbsp; ' + ${user.name}+'，欢迎回来！'">U201513315，欢迎回来！</li>
                 </div>
               </ul>

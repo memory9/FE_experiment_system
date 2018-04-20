@@ -49,7 +49,16 @@
                 <li><h2><a href="broad-manage.html" >浏览公告</a></h2></li>
                 <li><h2><a href="#" class="active">创建公告</a></h2></li>
                 <div style="float: right">
-                 <li><img th:src="${user.url}" alt="头像" style="width: 35px;height: 35px;border: 1px;border-style:groove;solid-color: #FFFFF0" ></li>
+                  <li>
+                    <div class="dropdown">
+                      <img  id="avatar-img" src="../images/sunset.jpg" th:src="${user.url}" alt="头像">
+                      <div class="dropdown-content">
+                        <a href="personal-center.html">个人主页</a>
+                        <a href="change-pwd.html">修改密码</a>
+                        <a href="../login.html">退出登录</a>
+                      </div>
+                    </div>
+                  </li>
                   <li style="font-family: 微软雅黑" th:text="'&nbsp; ' + ${user.name}+'，欢迎回来！'">U201513315，欢迎回来！</li>
                 </div>
               </ul>
