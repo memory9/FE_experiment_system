@@ -1,5 +1,5 @@
 .announcement-status {
-	color:#888;
+	color: #888;
 	padding-top: 10px;
 }
 
@@ -27,4 +27,108 @@
 	color: green;
 	padding: 5px 15px;
 	transition: all 0.3s ease;
+}
+
+/*#avatar-div {
+	width: 32px;
+	height: 32px;
+	padding:2px;
+	background: #ececec;
+	border-radius:32px;
+	box-shadow: 0px 0px 1px rgba(0,0,0,0.4);
+	-moz-border-radius: 32px;
+	-webkit-border-radius: 32px;
+}*/
+#avatar-img {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	color: #FFFFF0;
+	display: inline-block;
+	position: relative;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 100px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 9999;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+}
+
+.publisher, .release-date, .release-label {
+	display: inline-block;
+}
+
+.publisher, .release-date {
+	padding-right: 30px;
+}
+
+.dialog {
+	width: 360px;
+	border: none;
+	position: absolute;
+	display: none;
+	z-index: 101;
+}
+
+.dialog .title {
+	background-color: #39ADB4;
+	padding: 10px;
+	color: #fff;
+	font-weight: bold;
+}
+
+.dialog .title img {
+	float: right;
+}
+
+.dialog .content {
+	background-color: #fff;
+	padding: 25px;
+	height: 60px;
+}
+
+.dialog .content img {
+	float: left;
+}
+
+.dialog .content span {
+	float: left;
+	padding-top: 0;
+	padding-left: 10px;
+	font-size: 14px;
+}
+
+.dialog .bottom {
+	text-align: right;
+	padding: 10px 10px 10px 0px;
+	background-color: #eee;
+}
+
+.mask {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+	z-index: 100;
 }
