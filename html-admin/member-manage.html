@@ -98,8 +98,8 @@
                             </select>
                         </div>
                         <div class="col-lg-2 col-md-2 form-group">
-                            <button class="templatemo-edit-btn" type="button">搜索</button>
-                            <button class="templatemo-edit-btn" type="button">全部</button>
+                            <button class="templatemo-edit-btn" id="search-btn" type="button">搜索</button>
+                            <button class="templatemo-edit-btn" id="search-btn" type="button">全部</button>
                         </div>
                     </div>
                 </div>
@@ -113,73 +113,97 @@
                                     <td><a href="" class="white-text templatemo-sort-by">昵称 <span class="caret"></span></a></td>
                                     <td><a href="" class="white-text templatemo-sort-by">职位 <span class="caret"></span></a></td>
                                     <td><a href="" class="white-text templatemo-sort-by">联系方式 <span class="caret"></span></a></td>
-                                    <td>编辑</td>
+                                    <td width="200">操作</td>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>1.</td>
-                                    <td>John</td>
-                                    <td>Smith</td>
-                                    <td>@jS</td>
-                                    <td>js@company.com</td>
-                                    <td><a href="" class="templatemo-edit-btn">编辑</a></td>
+                                    <td class="edit">1.</td>
+                                    <td class="edit">John</td>
+                                    <td class="edit">Smith</td>
+                                    <td class="edit">@jS</td>
+                                    <td class="edit">js@company.com</td>
+                                    <td width="200">
+                                        <button class="templatemo-edit-btn edit-member" type="button">编辑</button>&nbsp;
+                                        <button class="templatemo-delete-btn delete-member" type="button">删除</button>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>2.</td>
-                                    <td>Bill</td>
-                                    <td>Jones</td>
-                                    <td>@bJ</td>
-                                    <td>bj@company.com</td>
-                                    <td><a href="" class="templatemo-edit-btn">编辑</a></td>
+                                    <td class="edit">2.</td>
+                                    <td class="edit">Bill</td>
+                                    <td class="edit">Jones</td>
+                                    <td class="edit">@bJ</td>
+                                    <td class="edit">bj@company.com</td>
+                                    <td width="200">
+                                        <button class="templatemo-edit-btn edit-member" type="button">编辑</button>&nbsp;
+                                        <button class="templatemo-delete-btn delete-member" type="button">删除</button>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>3.</td>
-                                    <td>Mary</td>
-                                    <td>James</td>
-                                    <td>@mJ</td>
-                                    <td>mj@company.com</td>
-                                    <td><a href="" class="templatemo-edit-btn">编辑</a></td>
+                                    <td class="edit">3.</td>
+                                    <td class="edit">Mary</td>
+                                    <td class="edit">James</td>
+                                    <td class="edit">@mJ</td>
+                                    <td class="edit">mj@company.com</td>
+                                    <td width="200">
+                                        <button class="templatemo-edit-btn edit-member" type="button">编辑</button>&nbsp;
+                                        <button class="templatemo-delete-btn delete-member" type="button">删除</button>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>4.</td>
-                                    <td>Steve</td>
-                                    <td>Bride</td>
-                                    <td>@sB</td>
-                                    <td>sb@company.com</td>
-                                    <td><a href="" class="templatemo-edit-btn">编辑</a></td>
+                                    <td class="edit">4.</td>
+                                    <td class="edit">Steve</td>
+                                    <td class="edit">Bride</td>
+                                    <td class="edit">@sB</td>
+                                    <td class="edit">sb@company.com</td>
+                                    <td width="200">
+                                        <button class="templatemo-edit-btn edit-member" type="button">编辑</button>&nbsp;
+                                        <button class="templatemo-delete-btn delete-member" type="button">删除</button>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>5.</td>
-                                    <td>Paul</td>
-                                    <td>Richard</td>
-                                    <td>@pR</td>
-                                    <td>pr@company.com</td>
-                                    <td><a href="" class="templatemo-edit-btn">编辑</a></td>
+                                    <td class="edit">5.</td>
+                                    <td class="edit">Paul</td>
+                                    <td class="edit">Richard</td>
+                                    <td class="edit">@pR</td>
+                                    <td class="edit">pr@company.com</td>
+                                    <td width="200">
+                                        <button class="templatemo-edit-btn edit-member" type="button">编辑</button>&nbsp;
+                                        <button class="templatemo-delete-btn delete-member" type="button">删除</button>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>6.</td>
-                                    <td>Will</td>
-                                    <td>Brad</td>
-                                    <td>@wb</td>
-                                    <td>wb@company.com</td>
-                                    <td><a href="" class="templatemo-edit-btn">编辑</a></td>
+                                    <td class="edit">6.</td>
+                                    <td class="edit">Will</td>
+                                    <td class="edit">Brad</td>
+                                    <td class="edit">@wb</td>
+                                    <td class="edit">wb@company.com</td>
+                                    <td width="200">
+                                        <button class="templatemo-edit-btn edit-member" type="button">编辑</button>&nbsp;
+                                        <button class="templatemo-delete-btn delete-member" type="button">删除</button>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>7.</td>
-                                    <td>Steven</td>
-                                    <td>Eric</td>
-                                    <td>@sE</td>
-                                    <td>se@company.com</td>
-                                    <td><a href="" class="templatemo-edit-btn">编辑</a></td>
+                                    <td class="edit">7.</td>
+                                    <td class="edit">Steven</td>
+                                    <td class="edit">Eric</td>
+                                    <td class="edit">@sE</td>
+                                    <td class="edit">se@company.com</td>
+                                    <td width="200">
+                                        <button class="templatemo-edit-btn edit-member" type="button">编辑</button>&nbsp;
+                                        <button class="templatemo-delete-btn delete-member" type="button">删除</button>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>8.</td>
-                                    <td>Landi</td>
-                                    <td>Susan</td>
-                                    <td>@lS</td>
-                                    <td>ls@company.com</td>
-                                    <td><a href="" class="templatemo-edit-btn">编辑</a></td>
+                                    <td class="edit">8.</td>
+                                    <td class="edit">Landi</td>
+                                    <td class="edit">Susan</td>
+                                    <td class="edit">@lS</td>
+                                    <td class="edit">ls@company.com</td>
+                                    <td width="200">
+                                        <button class="templatemo-edit-btn edit-member" type="button">编辑</button>&nbsp;
+                                        <button class="templatemo-delete-btn delete-member" type="button">删除</button>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -197,9 +221,8 @@
     <script src="../js/jquery.js"></script>
     <!-- jQuery 3.3.1-->
     <script src="https://rawgit.com/indrimuska/jquery-editable-select/master/src/jquery-editable-select.js"></script>
-<!--     <script type="text/javascript" src="../js/templatemo-script.js"></script> -->
-    <!-- Templatemo Script -->
     <script src="../js/main.js"></script>
+    <script src="../js/edittableSelect.js"></script>
 </body>
 
 </html>

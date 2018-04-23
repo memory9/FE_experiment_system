@@ -66,6 +66,45 @@
                 </div>
             </div>
             <div class="templatemo-content-container">
+                <div class="templatemo-content-widget white-bg ">
+                    <div class="row form-group">
+                        <div class="col-lg-2 col-md-2 form-group">
+                            <label>学号</label>
+                            <select class="form-control shift-info">
+                                <option>类型1</option>
+                                <option>类型2</option>
+                                <option>类型3</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 col-md-3 form-group">
+                            <label>学院</label>
+                            <select class="form-control shift-info">
+                                <option>类型1</option>
+                                <option>类型2</option>
+                                <option>类型3</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 col-md-3 form-group">
+                            <label>班级</label>
+                            <select class="form-control shift-info">
+                                <option>类型1</option>
+                                <option>类型2</option>
+                                <option>类型3</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2 col-md-2 form-group">
+                            <section><!-- Checbox One -->
+                                <h3>只看未评分</h3>
+                                <div class="checkboxOne"><input id="checkboxOneInput" type="checkbox" name="" value="1" />
+                                <label for="checkboxOneInput"></label></div>
+                            </section>
+                        </div>
+                        <div class="col-lg-2 col-md-2 form-group">
+                            <button class="templatemo-edit-btn" id="search-btn" type="button">搜索</button>
+                            <button class="templatemo-edit-btn" id="search-btn" type="button">全部</button>
+                        </div>
+                    </div>
+                </div>
                 <div class="templatemo-content-widget no-padding">
                     <div class="panel panel-default table-responsive">
                         <table class="table table-striped table-bordered templatemo-user-table">
@@ -78,89 +117,104 @@
                                     <td><a href="" class="white-text templatemo-sort-by">实验报告 <span class="caret"></span></a></td>
                                     <td><a href="" class="white-text templatemo-sort-by">得分 <span class="caret"></span></a></td>
                                     <td></td>
-                                    <td></td>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>1.</td>
-                                    <td>John</td>
-                                    <td>Smith</td>
+                                    <td class="edit">1.</td>
+                                    <td class="edit">John</td>
+                                    <td class="edit">Smith</td>
                                     <td><a href="">@jS</a></td>
                                     <td><a href="">js@company.com</a></td>
-                                    <td>80</td>
-                                    <td><a href="" class="templatemo-edit-btn">编辑</a></td>
-                                    <td><a href="javascript:clear();" onclick="clearRow(this)" class="templatemo-delete-btn">删除</a></td>
+                                    <td class="edit">80</td>
+                                    <td width="200">
+                                        <button class="templatemo-edit-btn edit-member" type="button">编辑</button>&nbsp;
+                                        <button class="templatemo-delete-btn delete-member" type="button">删除</button>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>2.</td>
-                                    <td>Bill</td>
-                                    <td>Jones</td>
+                                    <td class="edit">2.</td>
+                                    <td class="edit">Bill</td>
+                                    <td class="edit">Jones</td>
                                     <td><a href="">@bJ</a></td>
                                     <td><a href="">bj@company.com</a></td>
-                                    <td>80</td>
-                                    <td><a href="" class="templatemo-edit-btn">编辑</a></td>
-                                    <td><a href="javascript:clear();" onclick="clearRow(this)" class="templatemo-delete-btn">删除</a></td>
+                                    <td class="edit">80</td>
+                                    <td width="200">
+                                        <button class="templatemo-edit-btn edit-member" type="button">编辑</button>&nbsp;
+                                        <button class="templatemo-delete-btn delete-member" type="button">删除</button>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>3.</td>
-                                    <td>Mary</td>
-                                    <td>James</td>
+                                    <td class="edit">3.</td>
+                                    <td class="edit">Mary</td>
+                                    <td class="edit">James</td>
                                     <td><a href="">@mJ</a></td>
                                     <td><a href="">mj@company.com</a></td>
-                                    <td>80</td>
-                                    <td><a href="" class="templatemo-edit-btn">编辑</a></td>
-                                    <td><a href="javascript:clear();" onclick="clearRow(this)" class="templatemo-delete-btn">删除</a></td>
+                                    <td class="edit">80</td>
+                                    <td width="200">
+                                        <button class="templatemo-edit-btn edit-member" type="button">编辑</button>&nbsp;
+                                        <button class="templatemo-delete-btn delete-member" type="button">删除</button>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>4.</td>
-                                    <td>Steve</td>
-                                    <td>Bride</td>
+                                    <td class="edit">4.</td>
+                                    <td class="edit">Steve</td>
+                                    <td class="edit">Bride</td>
                                     <td><a href="">@sB</a></td>
                                     <td><a href="">sb@company.com</a></td>
-                                    <td>80</td>
-                                    <td><a href="" class="templatemo-edit-btn">编辑</a></td>
-                                    <td><a href="javascript:clear();" onclick="clearRow(this)" class="templatemo-delete-btn">删除</a></td>
+                                    <td class="edit">80</td>
+                                    <td width="200">
+                                        <button class="templatemo-edit-btn edit-member" type="button">编辑</button>&nbsp;
+                                        <button class="templatemo-delete-btn delete-member" type="button">删除</button>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>5.</td>
-                                    <td>Paul</td>
-                                    <td>Richard</td>
+                                    <td class="edit">5.</td>
+                                    <td class="edit">Paul</td>
+                                    <td class="edit">Richard</td>
                                     <td><a href="">@pR</a></td>
                                     <td><a href="">pr@company.com</a></td>
-                                    <td>80</td>
-                                    <td><a href="" class="templatemo-edit-btn">编辑</a></td>
-                                    <td><a href="javascript:clear();" onclick="clearRow(this)" class="templatemo-delete-btn">删除</a></td>
+                                    <td class="edit">80</td>
+                                    <td width="200">
+                                        <button class="templatemo-edit-btn edit-member" type="button">编辑</button>&nbsp;
+                                        <button class="templatemo-delete-btn delete-member" type="button">删除</button>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>6.</td>
-                                    <td>Will</td>
-                                    <td>Brad</td>
+                                    <td class="edit">6.</td>
+                                    <td class="edit">Will</td>
+                                    <td class="edit">Brad</td>
                                     <td><a href="">@wb</a></td>
                                     <td><a href="">wb@company.com</a></td>
-                                    <td>80</td>
-                                    <td><a href="" class="templatemo-edit-btn">编辑</a></td>
-                                    <td><a href="javascript:clear();" onclick="clearRow(this)" class="templatemo-delete-btn">删除</a></td>
+                                    <td class="edit">80</td>
+                                    <td width="200">
+                                        <button class="templatemo-edit-btn edit-member" type="button">编辑</button>&nbsp;
+                                        <button class="templatemo-delete-btn delete-member" type="button">删除</button>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>7.</td>
-                                    <td>Steven</td>
-                                    <td>Eric</td>
+                                    <td class="edit">7.</td>
+                                    <td>S class="edit"teven</td>
+                                    <td class="edit">Eric</td>
                                     <td><a href="">@sE</a></td>
                                     <td><a href="">se@company.com</a></td>
-                                    <td>80</td>
-                                    <td><a href="" class="templatemo-edit-btn">编辑</a></td>
-                                    <td><a href="javascript:clear();" onclick="clearRow(this)" class="templatemo-delete-btn">删除</a></td>
+                                    <td class="edit">80</td>
+                                    <td width="200">
+                                        <button class="templatemo-edit-btn edit-member" type="button">编辑</button>&nbsp;
+                                        <button class="templatemo-delete-btn delete-member" type="button">删除</button>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>8.</td>
-                                    <td>Landi</td>
-                                    <td>Susan</td>
+                                    <td class="edit">8.</td>
+                                    <td> class="edit"Landi</td>
+                                    <td class="edit">Susan</td>
                                     <td><a href="">@lS</a></td>
                                     <td><a href="">ls@company.com</a></td>
-                                    <td>80</td>
-                                    <td><a href="" class="templatemo-edit-btn">编辑</a></td>
-                                    <td><a href="javascript:clear();" onclick="clearRow(this)" class="templatemo-delete-btn">删除</a></td>
+                                    <td class="edit">80</td>
+                                    <td width="200">
+                                        <button class="templatemo-edit-btn edit-member" type="button">编辑</button>&nbsp;
+                                        <button class="templatemo-delete-btn delete-member" type="button">删除</button>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -177,8 +231,6 @@
     <!-- JS -->
     <script src="../js/jquery.js"></script>
     <!-- jQuery 3.3.1-->
-    <!-- <script type="text/javascript" src="../js/templatemo-script.js"></script> -->
-    <!-- Templatemo Script -->
     <script src="../js/main.js"></script>
 </body>
 
