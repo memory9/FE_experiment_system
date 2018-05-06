@@ -12,6 +12,15 @@ $(document).ready(function() {
     $(".dialog").show(); //显示提示对话框
   });
 
+  var obj = null;
+  var As = document.getElementsByClassName('templatemo-left-nav')[0].getElementsByTagName('a');
+  for (i = 0;i<As.length;i++) {
+    if (window.location.href.indexOf(As[i].href)>=0) {
+      obj = As[i];
+    }
+  }
+  obj.setAttribute('class', 'active');
+
   function showDialog() {
     var objW = $(window); //当前窗口
     var objC = $(".dialog"); //对话框
@@ -133,6 +142,9 @@ $(document).ready(function() {
       tr.remove();
     });
   });
+
+  //添加active属性
+
   //修改密码
   $("#oldpassword").blur(function() {
     var param = $("#oldpassword").val();
