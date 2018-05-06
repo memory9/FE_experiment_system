@@ -1,5 +1,12 @@
 # FE_experiment_system
+5.6 Update
+
+学生页面部分任务基本完成
+
+---
+
 4.23 Update
+
 - [x] 修改密码页面，添加提示"原密码不正确"、"两次输入的新密码不相同"等信息。最好用ajax做（我在后端已经做了这部分的判断，返回的json，可以在后端userController查看代码)https://blog.csdn.net/exceptional_derek/article/details/19198101
 
   >  <u>提交那里貌似因为后端的关系有点问题。。</u>
